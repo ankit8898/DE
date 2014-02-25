@@ -7,5 +7,9 @@ class CreateSales < ActiveRecord::Migration
  	  t.belongs_to :purchaser
       t.timestamps
     end
+    add_index :sales,:item_id
+    add_index :sales,:merchant_id
+    add_index :sales,:purchaser_id
+    add_index :sales,:purchase_count
   end
 end
