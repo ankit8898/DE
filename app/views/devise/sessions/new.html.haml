@@ -1,0 +1,33 @@
+%h2 Sign in
+= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+  %fieldset
+    %div
+      = f.label :email
+      %br/
+      = f.email_field :email, :autofocus => true
+    %div
+      = f.label :password
+      %br/
+      = f.password_field :password
+    - if devise_mapping.rememberable?
+      %div
+        = f.check_box :remember_me
+        = f.label :remember_me
+    %div= f.submit "Sign in",class: 'button small'
+
+
+%h5
+  Fake Login As:
+
+= link_to 'Standard User','#',id: 'user', class: 'button small'
+
+= content_for(:js_on_page) do
+  :javascript
+    $(function() {
+      $('#user').click(function() {
+        $('#user_email').val('ankit.gupta8898@gmail.com');
+        $('#user_password').val('P@ssw0rd');
+        $('input[value*="Sign in"]').click();
+      });
+      
+    });

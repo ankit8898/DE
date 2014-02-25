@@ -13,7 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
+//= require scrollReveal
 //= require turbolinks
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function(){ 
+	 window.scrollReveal = new scrollReveal();
+	$(document).foundation(); 
+});

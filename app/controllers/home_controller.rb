@@ -15,4 +15,8 @@ class HomeController < ApplicationController
 		end
 		redirect_to root_url(gross_revenue: @gross_revenue) 
 	end
+
+	def download
+		send_file "#{Rails.root}/public/dummy_data.tab"
+	end
 end

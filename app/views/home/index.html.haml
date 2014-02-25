@@ -11,5 +11,10 @@
     %span.label.secondary
       = t(:note)
 
+    %span.right
+      %p
+        Don't have file to upload? 
+        = link_to 'Download',download_url
 - if @gross_revenue
-  = render partial: 'pricing_table',locals: {gross_revenue: @gross_revenue}
+  = scroll_reveal animation: 'enter right after 1s' do 
+    = render partial: 'pricing_table',locals: {gross_revenue: @gross_revenue}

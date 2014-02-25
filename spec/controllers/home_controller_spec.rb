@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe HomeController do
+  
+  login_standard_user
  
   let(:gross_revenue) {95}
 

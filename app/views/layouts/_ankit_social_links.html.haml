@@ -1,15 +1,19 @@
 %ul.right
   %li.active
-    = link_to root_url do 
+    = link_to 'https://github.com/ankit8898',target: '_blank' do 
       = content_tag(:i,nil,class: 'fa fa-github-square')
   %li.active
-    = link_to root_url do 
+    = link_to 'https://twitter.com/ankit8898',target: '_blank' do 
       = content_tag(:i,nil,class: 'fa fa-twitter')
   %li.active
-    = link_to root_url do 
+    = link_to 'https://linkedin.com/pub/ankit-gupta/25/205/254/', target: '_blank' do 
       = content_tag(:i,nil,class: 'fa fa-linkedin-square')
   %li.active
-    = link_to root_url do 
+    = link_to 'http://instagram.com/ag_instagraphy', target: '_blank' do 
       = content_tag(:i,nil,class: 'fa fa-instagram')
-  %li
-    = link_to 'Sign Out',root_url
+  - if user_signed_in?
+    %li.has-dropdown
+      = link_to "Welcome, #{current_user.email}"
+      %ul.dropdown
+        %li
+          = link_to 'Sign Out',destroy_user_session_path, method: :delete

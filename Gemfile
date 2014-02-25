@@ -23,6 +23,9 @@ gem 'jquery-rails'
 
 gem 'font-awesome-rails'
 
+gem "scrollreveal-rails"    
+
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
@@ -33,6 +36,8 @@ gem 'foundation-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'devise'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -41,6 +46,9 @@ end
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem "erb2haml"
 end
 
 group :test do 

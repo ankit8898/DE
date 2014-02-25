@@ -4,7 +4,7 @@
     %meta{charset: "utf-8"}/
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
     %title
-      Data-engineering
+      Data Engineering
     = stylesheet_link_tag    "application"
     = javascript_include_tag "vendor/modernizr"
     = csrf_meta_tags
@@ -19,3 +19,4 @@
       .small-12.large-2.columns
         &nbsp;
     = javascript_include_tag "application"
+    = content_for(:js_on_page)
