@@ -1,0 +1,20 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %title
+      Data-engineering
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "vendor/modernizr"
+    = csrf_meta_tags
+  %body
+    = render partial: 'layouts/top_nav'
+    .row
+      .large-3.columns
+        &nbsp;
+      .large-9.columns
+        = yield
+      .large-3.columns
+        &nbsp;
+    = javascript_include_tag "application"
