@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ankit8898/DE.png?branch=master)](https://travis-ci.org/ankit8898/DE)[![Coverage Status](https://coveralls.io/repos/ankit8898/DE/badge.png)](https://coveralls.io/r/ankit8898/DE)
 # Data Engineering
 
 A Rails App to Normalize a tab delimited file and calculate revenue.
