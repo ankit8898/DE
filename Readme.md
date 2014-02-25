@@ -18,12 +18,11 @@ Installing..
 The application uses rspec, factory girl and shoulda to have it's unit tests
 
 	bundle exec rake db:recreate RAILS_ENV=test
-	bundle exec rake db:test:prepare
 	bundle exec rspec
 
 ## Deploying
 
-Currently deployed on Heroku.  Deployment right with @ankit8898
+Currently deployed on Heroku.  Deployment rights with @ankit8898
 
 
 
