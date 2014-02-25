@@ -2,7 +2,8 @@
   %ul.title-area
     %li.name
       %h1
-        = link_to 'Data Engineering',root_url
+        = link_to root_url do 
+          = content_tag(:i,' Data Engineering',class: 'fa fa-cog')
     %li.toggle-topbar.menu-icon
       %a{href: "#"} Menu
   %section.top-bar-section
