@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20140225033023) do
     t.integer  "purchase_count"
     t.integer  "item_id"
     t.integer  "merchant_id"
-    t.integer  "sale_id"
+    t.integer  "purchaser_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

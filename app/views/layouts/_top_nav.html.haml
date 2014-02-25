@@ -2,11 +2,10 @@
   %ul.title-area
     %li.name
       %h1
-        %a{href: "#"} Data Engineering
+        = link_to 'Data Engineering Challenge',root_url
     %li.toggle-topbar.menu-icon
       %a{href: "#"} Menu
   %section.top-bar-section
     / Right Nav Section
-    %ul.right
-      %li.active
-        %a{href: "#"} Right Button Active
+    = render partial: 'layouts/ankit_social_links'
+     

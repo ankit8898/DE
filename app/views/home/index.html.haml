@@ -1,3 +1,15 @@
-= form_tag root_url do
-  = file_field_tag :file
-  = submit_tag 'Submit', class: 'button'
+= form_tag upload_url ,multipart: true do
+  %fieldset
+    %legend
+      Upload 
+    %label
+    = file_field_tag :file
+
+    .small-3.small-centered.columns
+      = submit_tag 'Submit', class: 'button small'
+
+    %span.label.secondary
+      = t(:note)
+
+- if @gross_revenue
+  = render partial: 'pricing_table',locals: {gross_revenue: @gross_revenue}

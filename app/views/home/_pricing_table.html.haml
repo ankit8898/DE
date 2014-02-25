@@ -1,0 +1,11 @@
+%ul.pricing-table
+  %li.title Calculated Total Gross Revenue
+  %li.description This is based on the Sales
+  - Sale.all.each do |sale|
+    %li.bullet-item
+      %h6
+        = formatted(sale)
+  %li.price 
+    = number_to_currency(gross_revenue)
+  %li.cta-button
+    %a.button{href: "#"} Buy Now

@@ -11,10 +11,11 @@
   %body
     = render partial: 'layouts/top_nav'
     .row
-      .large-3.columns
+      = render partial: 'layouts/messages'
+      .small-6.large-2.columns
         &nbsp;
-      .large-9.columns
+      .small-6.large-8.columns
         = yield
-      .large-3.columns
+      .small-12.large-2.columns
         &nbsp;
     = javascript_include_tag "application"

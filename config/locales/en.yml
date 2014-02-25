@@ -21,3 +21,4 @@
 
 en:
   hello: "Hello world"
+  note: "Note: After upload, your application should display the total amount gross revenue represented by the uploaded file."

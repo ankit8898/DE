@@ -1,0 +1,15 @@
+%ul.right
+  %li.active
+    = link_to root_url do 
+      = content_tag(:i,nil,class: 'fa fa-github-square')
+  %li.active
+    = link_to root_url do 
+      = content_tag(:i,nil,class: 'fa fa-twitter')
+  %li.active
+    = link_to root_url do 
+      = content_tag(:i,nil,class: 'fa fa-linkedin-square')
+  %li.active
+    = link_to root_url do 
+      = content_tag(:i,nil,class: 'fa fa-instagram')
+  %li
+    = link_to 'Sign Out',root_url

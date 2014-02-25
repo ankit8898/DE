@@ -4,7 +4,7 @@ class CreateSales < ActiveRecord::Migration
  	  t.integer :purchase_count
  	  t.belongs_to :item
  	  t.belongs_to :merchant
- 	  t.belongs_to :sale
+ 	  t.belongs_to :purchaser
       t.timestamps
     end
   end
