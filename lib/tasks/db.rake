@@ -1,3 +1,5 @@
+# Some of my personal Util tasks for easy DB recreations
+
 namespace :db do 
 	desc "Task to recreate the database and seed it"
 	task :recreate => :environment do 

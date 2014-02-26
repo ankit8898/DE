@@ -1,3 +1,9 @@
+#This module Simply calculates the Gross Revenue on the Total Sales Entry
+
+# Usage
+
+# $ DataEngineering::GrossRevenueCalculator.calculate
+
 module DataEngineering
 	class GrossRevenueCalculator
 

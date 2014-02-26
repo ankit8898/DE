@@ -1,3 +1,10 @@
+#This module is responsible for Seeding the parsed data into the Respective tables
+
+# Usage:
+
+# $ parsed_data = DataEngineering::Uploader.new("#{Rails.root}/public/dummy_data.tab").parsed_file
+# $ DataEngineering::Seeder.new(parsed_data).insert
+
 module DataEngineering
 	class Seeder
 
